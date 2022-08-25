@@ -1,0 +1,28 @@
+#include "little_big_scroll4.dtsi"
+
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+    };
+
+    kscan0: kscan_0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        label = "KSCAN";
+        diode-direction = "col2row";
+
+      col-gpios
+            = <&pro_micro 6 GPIO_ACTIVE_HIGH> //col0
+            , <&pro_micro 7 GPIO_ACTIVE_HIGH> //col1
+			, <&pro_micro 21 GPIO_ACTIVE_HIGH> //col2
+            ;
+
+        row-gpios
+            = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //row0
+            , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //row1
+            ;
+    };
+
+	&left_encoder {
+    status = "okay";
+	};
+};

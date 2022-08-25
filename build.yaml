@@ -14,4 +14,4 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: tidbit
+    shield: little_big_scroll4
