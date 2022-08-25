@@ -1,3 +1,6 @@
+# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
 #include "little_big_scroll4.dtsi"
 
 / {
