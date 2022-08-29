@@ -1,3 +1,5 @@
+#include "little_big_scroll4.dtsi"
+
 / {
     chosen {
         zmk,kscan = &kscan0;
