@@ -17,7 +17,7 @@
         lower_layer {
             bindings = <
                 &kp F8 &bt BT_SEL 0 &bt BT_CLR
-                &kp F9 1 &trans
+                &kp F9 &trans
             >;
             sensor-bindings = <&inc_dec_kp F8 F9>;
         };
